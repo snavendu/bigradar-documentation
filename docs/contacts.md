@@ -54,5 +54,6 @@ HTTP/1.1 422 Unprocessable Entity
 {
   "message": "Email address already exists"
 }
+
 ```
 <!-- tabs:end -->
