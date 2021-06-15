@@ -50,6 +50,7 @@ HTTP/1.1 200 OK
 ### If Contact already exists
 ```
 HTTP/1.1 422 Unprocessable Entity
+
 {
   "message": "Email address already exists"
 }
