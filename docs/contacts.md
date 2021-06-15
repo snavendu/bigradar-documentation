@@ -9,7 +9,7 @@
 
 #### **Request**
 ```
-$ curl https://app.bigradar.io/api/contacts \
+$ curl https://app.bigradar.io/api/users \
 -X POST \
 -H 'Authorization:Bearer <Your access token>' \
 -H 'Accept:application/json'
@@ -20,6 +20,11 @@ $ curl https://app.bigradar.io/api/contacts \
 	"email": "wash@serenity.io",
 	"phone": "+1123456789",
 	"name": "Hoban Washburn",
+    "data": {
+      "paid_subscriber": true,
+      "monthly_spend": 155.5,
+      "team_mates": 1
+    }
 }
 ```
 
@@ -41,8 +46,13 @@ HTTP/1.1 200 OK
     "ref": "WkLrs7IZE",
     "organizations": [],
     "sync": [],
+    "data": {
+      "paid_subscriber": true,
+      "monthly_spend": 155.5,
+      "team_mates": 1
+	  },
     "created_at": 2021-03-15T08:23:13.917+00:00,
-	"updated_at": 2021-03-15T08:23:13.917+00:00,
+	  "updated_at": 2021-03-15T08:23:13.917+00:00,
     "__v": 0
   }
 ```
@@ -57,3 +67,11 @@ HTTP/1.1 422 Unprocessable Entity
 
 ```
 <!-- tabs:end -->
+| attribute | type | discription |
+| --------- | ----------- | ------ |
+|email|string|email of the contact|
+|name|string|name of the contact|
+|phone|string|phone of the contact|
+|data|Object|its a custom or extra data you want to provide with contact |
+
+

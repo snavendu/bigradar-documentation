@@ -1,3 +1,4 @@
 - Api Docs
   - [Home](/)
   - [Create a contact](contacts.md)
+  - [Retrieve a Contact](retreive.md)
