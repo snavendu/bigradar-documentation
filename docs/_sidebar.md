@@ -2,3 +2,4 @@
   - [Home](/)
   - [Create a contact](contacts.md)
   - [Retrieve a Contact](retreive.md)
+  - [Email Integeration](emailTemplate.md)
